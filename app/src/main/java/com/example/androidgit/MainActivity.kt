@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Toast.makeText(this,"YES? It is GIT!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"123", Toast.LENGTH_SHORT).show()
 
     }
 }
