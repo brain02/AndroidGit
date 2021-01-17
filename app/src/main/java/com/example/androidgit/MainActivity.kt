@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             //init component
             val btnBack = findViewById<Button>(R.id.btnBack)
             val btnNext = findViewById<Button>(R.id.btnNext)
+            val btnRetro = findViewById<Button>(R.id.btnRetrofit)
             val myIntent = Intent(this, SecondActivity::class.java)
 
         // переход во фрагмент
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("text", "SecondActivity") //
             startActivity(myIntent)
         }
+        btnRetro.setOnClickListener {
+            startActivity(Intent(this, RetroActivity::class.java))
+        }
+
     }
 
 }

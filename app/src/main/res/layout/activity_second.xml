@@ -9,12 +9,13 @@
     android:orientation="vertical"
     tools:context=".SecondActivity">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:text="Подключение через JDBC"
+        android:textColor="#000000"
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/btnConDB"
@@ -23,9 +24,11 @@
         android:text="connection" />
 
     <TextView
-        android:id="@+id/textResult"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Далее"
+        android:textColor="#000000"
+        android:textSize="18dp" />
 
 </LinearLayout>
