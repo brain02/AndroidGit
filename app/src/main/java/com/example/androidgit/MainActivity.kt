@@ -1,6 +1,7 @@
 package com.example.androidgit
 
 import android.R.attr.button
+import android.R.attr.name
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -28,14 +29,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,ThridActivity::class.java))
         }
 
-        //переход в активити подключение DB
+        //DB
         btnNext.setOnClickListener {
             myIntent.putExtra("text", "SecondActivity") //
             startActivity(myIntent)
         }
+
+        //retrofit
         btnRetro.setOnClickListener {
-            startActivity(Intent(this, RetroActivity::class.java))
+            //startActivity(Intent(this, RetroActivity::class.java))
+            Toast.makeText(this,"Hello, Android Development",Toast.LENGTH_SHORT).show()
+            //startActivity(Intent(this,RetroActivity::class.java).putExtra("lol", 5))
         }
+
 
     }
 
